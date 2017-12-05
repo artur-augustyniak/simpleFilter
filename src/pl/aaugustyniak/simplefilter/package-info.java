@@ -1,10 +1,10 @@
 @Plugin({
-    InvertImageModifier.class,
-    HistogramEqualizeImageModifier.class,
-    GaussianBlurImageModifier.class,
-    SimpleSharpenImageModifier.class,
-    LowPassFilterImageModifier.class,
-    BwImageModifier.class
+        InvertImageModifier.class,
+        HistogramEqualizeImageModifier.class,
+        GaussianBlurImageModifier.class,
+        SimpleSharpenImageModifier.class,
+        LowPassFilterImageModifier.class,
+        BwImageModifier.class
 })
 package pl.aaugustyniak.simplefilter;
 

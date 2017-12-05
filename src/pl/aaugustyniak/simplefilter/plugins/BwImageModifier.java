@@ -7,24 +7,24 @@ package pl.aaugustyniak.simplefilter.plugins;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
+
 import pl.aaugustyniak.simplefilter.model.ImageModifierInterface;
 import pl.aaugustyniak.simplefilter.model.ImagePair;
 
 /**
- *
  * @author artur
  */
 public class BwImageModifier implements ImageModifierInterface {
 
     @Override
     public void modifier(BufferedImage imgToTransform) throws Exception {
-        
+
         BufferedImage tmpSrc = ImagePair.duplicate(imgToTransform);
         imgToTransform = new BufferedImage(tmpSrc.getWidth(), tmpSrc.getHeight(), BufferedImage.TYPE_BYTE_BINARY);
         Graphics2D g2d = imgToTransform.createGraphics();
         g2d.drawImage(tmpSrc, 0, 0, null);
-        
-        
+
+
     }
 
     @Override
